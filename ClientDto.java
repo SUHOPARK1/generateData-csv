@@ -1,6 +1,7 @@
 package dummy;
 
 public class ClientDto {
+
     public int cliNum;
     public String cliId;
     public String cliName;
