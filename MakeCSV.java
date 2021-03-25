@@ -12,7 +12,7 @@ public class MakeCSV {
                     new BufferedWriter(new FileWriter(filepath + "/" + title + ".csv", true));
 
             for (ClientDto dom : list) {
-                fw.write(dom.getCliNum()+","+dom.getCliId()+","+dom.getCliName()+","+dom.getCliGender()+","+dom.getCliEmail()+","+dom.getCliAgearange());
+                fw.write(dom.getCliNum()+","+dom.getRole()+","+dom.getProvider()+","+dom.getCliId()+","+dom.getCliName()+","+dom.getCliGender()+","+dom.getCliEmail()+","+dom.getCliAgearange());
                 fw.newLine();
             }
             fw.flush();

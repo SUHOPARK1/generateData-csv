@@ -2,15 +2,36 @@ package dummy;
 
 public class ClientDto {
 
+
+
     public int cliNum;
+    public String role; // user
+    public String provider; //naver, google, kakao
     public String cliId;
     public String cliName;
     public String cliGender;
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
     public String cliEmail;
     public String cliAgearange;
 
     public int getCliNum() {
         return cliNum;
+    }
+
+    public String getProvider() {
+        return provider;
+    }
+
+    public void setProvider(String provider) {
+        this.provider = provider;
     }
 
     public void setCliNum(int cliNum) {
@@ -61,6 +82,8 @@ public class ClientDto {
     public String toString() {
         return "ClientDto{" +
                 "cliNum=" + cliNum +
+                ", role='" + role + '\'' +
+                ", provider='" + provider + '\'' +
                 ", cliId='" + cliId + '\'' +
                 ", cliName='" + cliName + '\'' +
                 ", cliGender='" + cliGender + '\'' +

@@ -11,6 +11,8 @@ public class DummyMerge {
         for (int i = 0; i < 1000; i++){
             ClientDto clientDto = new ClientDto();
             clientDto.setCliNum(i+1);
+            clientDto.setRole(DummyRole.role());
+            clientDto.setProvider(DummyProvider.provider());
             clientDto.setCliId(DummyId.nId()+DummyId.nNo2());
             clientDto.setCliName(DummyName.Name());
             clientDto.setCliGender(DummyGender.gender());
